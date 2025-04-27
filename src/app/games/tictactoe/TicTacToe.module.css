@@ -1,0 +1,94 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: 400px;
+    margin: 0 auto;
+    background: var(--background);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    color: var(--gray-800);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .status {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--gray-700);
+    font-weight: 500;
+  }
+  
+  .board {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .row {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .square {
+    width: 80px;
+    height: 80px;
+    background: var(--gray-100);
+    border: 2px solid var(--gray-200);
+    border-radius: 8px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .square:hover {
+    background: var(--gray-200);
+    transform: scale(1.05);
+  }
+  
+  .x {
+    color: var(--primary);
+    animation: popIn 0.3s ease-out;
+  }
+  
+  .o {
+    color: #e53e3e;
+    animation: popIn 0.3s ease-out;
+  }
+  
+  @keyframes popIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .resetButton {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resetButton:hover {
+    background: var(--primary-dark);
+  }

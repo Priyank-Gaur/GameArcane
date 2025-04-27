@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a2e;
+    padding: 2rem;
+    color: white;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(8, 40px);
+    gap: 5px;
+    margin-top: 1rem;
+    animation: fadeIn 0.6s ease-in;
+  }
+  
+  .cell {
+    width: 40px;
+    height: 40px;
+    background-color: #2e2e4d;
+    border: 2px solid #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+  
+  .cell:hover {
+    background-color: #3e3e6d;
+  }
+  
+  .revealed {
+    background-color: #eee;
+    color: #111;
+    cursor: default;
+  }
+  
+  .flag {
+    color: #ff5050;
+  }
+  
+  .win {
+    color: #00ff99;
+  }
+  
+  .lose {
+    color: #ff4040;
+  }
+  
+  .reset {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #00c2ff;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .reset:hover {
+    background-color: #009fcc;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

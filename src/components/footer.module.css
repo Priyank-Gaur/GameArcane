@@ -1,0 +1,28 @@
+/* styles/Footer.module.css */
+.footer {
+    background-color: #aeb1b1;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .socialLinks {
+    margin-top: 10px;
+  }
+  
+  .socialLinks a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  .socialLinks a:hover {
+    text-decoration: underline;
+  }
+  
